@@ -1,0 +1,5 @@
+{
+  "ProjectOverviewURL": "https://fbc15b37trial.launchpad.cfapps.us10.hana.ondemand.com/lcapBASTest.BASTestLaunchpad-1.0.0",
+  "DeployedUTCTime": "2024-01-11T11:16:00.184Z",
+  "ApplicationLogURL": "https://logs.cf.us10-001.hana.ondemand.com/app/dashboards#/view/Overview?_g=(filters:!((query:(match_phrase:(component_name:BASTest-srv)))))"
+}

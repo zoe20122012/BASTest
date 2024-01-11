@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Project Preview </title>
+    <title> Application Overview </title>
     <script src="shared-config.js"></script>
     <script src="https://ui5.sap.com/1.108.7/resources/sap-ui-core.js" 
             id="sap-ui-bootstrap"
@@ -28,7 +28,7 @@
                     return Controller.extend("PreviewController", {
                         onInit: function () {
 
-                            const data = {"Services":[{"ServiceName":"BASTestService","DetailsURL":"./service/BASTest/","Metadata":"./service/BASTest/$metadata","Entities":[{"Name":"Risks","URL":"./service/BASTest/Risks","FioriURL":"$fiori-preview/BASTestService/Risks#preview-app"},{"Name":"Mitigations","URL":"./service/BASTest/Mitigations","FioriURL":"$fiori-preview/BASTestService/Mitigations#preview-app"},{"Name":"A_BusinessPartner","URL":"./service/BASTest/A_BusinessPartner","FioriURL":"$fiori-preview/BASTestService/A_BusinessPartner#preview-app"}],"EntitiesCount":3}]}
+                            const data = {"Services":[{"ServiceName":"BASTestService","DetailsURL":"./service/BASTest/","Metadata":"./service/BASTest/$metadata","Entities":[{"Name":"Risks","URL":"./service/BASTest/Risks","FioriURL":""},{"Name":"Mitigations","URL":"./service/BASTest/Mitigations","FioriURL":""},{"Name":"A_BusinessPartner","URL":"./service/BASTest/A_BusinessPartner","FioriURL":""}],"EntitiesCount":3}]}
                             this.getView().setModel(new JSONModel(data));
                         }
                     });
