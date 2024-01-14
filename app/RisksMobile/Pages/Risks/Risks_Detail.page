@@ -1,0 +1,100 @@
+{
+	"Caption": "Risks Detail",
+	"DesignTimeTarget": {
+		"Service": "/RisksMobile/Services/service1.service",
+		"EntitySet": "Risks",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/RisksMobile/Rules/Risks/NavToRisks_Edit.js",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/RisksMobile/Rules/Risks/Risks_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{title}",
+						"Subhead": "{createdAt}",
+						"BodyText": "",
+						"Footnote": "{modifiedAt}",
+						"Description": "{createdBy}",
+						"StatusText": "{modifiedBy}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{prio}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "$(L,CreatedAt)",
+							"Value": "{createdAt}"
+						},
+						{
+							"KeyName": "$(L,CreatedBy)",
+							"Value": "{createdBy}"
+						},
+						{
+							"KeyName": "$(L,ChangedAt)",
+							"Value": "{modifiedAt}"
+						},
+						{
+							"KeyName": "$(L,ChangedBy)",
+							"Value": "{modifiedBy}"
+						},
+						{
+							"KeyName": "title",
+							"Value": "{title}"
+						},
+						{
+							"KeyName": "prio",
+							"Value": "{prio}"
+						},
+						{
+							"KeyName": "descr",
+							"Value": "{descr}"
+						},
+						{
+							"KeyName": "impact",
+							"Value": "{impact}"
+						},
+						{
+							"KeyName": "criticality",
+							"Value": "{criticality}"
+						},
+						{
+							"KeyName": "supplier_BusinessPartner",
+							"Value": "{supplier_BusinessPartner}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Risks_Detail",
+	"PrefersLargeCaption": true
+}

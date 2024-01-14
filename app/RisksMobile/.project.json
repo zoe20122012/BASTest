@@ -1,0 +1,48 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "CRUD",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10-001.hana.ondemand.com",
+		"Organization": "f486d31a-10bd-4ca9-88fb-87ca64fa8d5d",
+		"Space": "cac6b281-31f0-405f-ab50-82724502b2ae"
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/f486d31a-10bd-4ca9-88fb-87ca64fa8d5d/space/cac6b281-31f0-405f-ab50-82724502b2ae",
+		"AppId": "lcap.BASTest.RisksMobile",
+		"Destination": [],
+		"Create": true,
+		"DestinationName": "BASTestService",
+		"DestinationUrl": "https://fbc15b37trial-dev-bastest-srv.cfapps.us10-001.hana.ondemand.com/service/BASTest",
+		"Uaa": "BASTest-uaa"
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=lcap.BASTest.RisksMobile&ClientId=597823d4-2883-4a21-96e4-f2e4955fff50&ServerUrl=https://fbc15b37trial-dev-lcap-bastest-risksmobile.cfapps.us10-001.hana.ondemand.com&SapCloudPlatformEndpoint=https://fbc15b37trial-dev-lcap-bastest-risksmobile.cfapps.us10-001.hana.ondemand.com&AuthorizationEndpointUrl=https://fbc15b37trial-dev-lcap-bastest-risksmobile.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://fbc15b37trial-dev-lcap-bastest-risksmobile.cfapps.us10-001.hana.ondemand.com&TokenUrl=https://fbc15b37trial-dev-lcap-bastest-risksmobile.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"LCAP": {
+		"FullName": "BASTest_RisksMobile",
+		"Service": [
+			{
+				"mdk": "RisksMobile/Services/service1.service",
+				"cap": {
+					"name": "BASTestService",
+					"sourcePath": "srv/service.cds",
+					"path": "/service/BASTest/",
+					"entryPath": "/service/BASTest",
+					"destination": "BASTest-app-srv",
+					"value": "0"
+				}
+			}
+		],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	}
+}

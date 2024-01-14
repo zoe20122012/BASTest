@@ -1,0 +1,18 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/RisksMobile/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/RisksMobile/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "description": "#Control:description/#Value",
+        "owner": "#Control:owner/#Value",
+        "timeline": "#Control:timeline/#Value"
+    },
+    "Target": {
+        "EntitySet": "Mitigations",
+        "Service": "/RisksMobile/Services/service1.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}
